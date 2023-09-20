@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MenuItem>
+<div id="layoutSidenav_nav">
+	<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+		<div class="nav">
+			<div class="sb-sidenav-menu-heading">Core</div>
+			@foreach (var i in Model) {
+				<a class="nav-link" href="@i.Link">
+					<div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+					@i.Name
+				</a>
+			}
+		</div>
+	</nav>
+</div>
